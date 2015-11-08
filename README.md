@@ -22,7 +22,10 @@ PROBLEM DESCRIPTION
 ==================
 
 The Conway’s game of life, as described above, has quite a lot of potential for AI applications. We shall treat this as a cellular automata and use apply the genetic algorithm in order to explore how we can maximize life for structures that structures that are not permanent (for example blocks) last for a longer number of generations.
+
 MOTIVATION FOR CHOOSING THIS PROBLEM
+==================================
+
 By choosing this problem, we feel that we will be tackling a unique and interesting idea as a part of this project. To the best of our knowledge, the existing literature in AI does not contain detailed descriptions of the role that Conway’s game of life plays in this field. Given the fame that this enjoys and the impact it has had in the field of theoretical mathematics and cellular automata, we feel that it is only appropriate to investigate the various possibilities in the field of AI.
 
 PLAN OF ACTION
