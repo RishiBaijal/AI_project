@@ -6,11 +6,16 @@ INTRODUCTION
 
 In 1970, British mathematician John Conway conceptualized a cellular automaton in an attempt to simplify John von Neumann’s ideas of a hypothetical machine that could create copies of itself. This came to be known as “The Game of Life”.
 The universe of this game consists of an infinite, two­dimensional and orthogonal grid of square cells. Each of these can be in one of the following possible states ­ alive or dead. Each cell interacts with cells that can be horizontally, vertically or diagonally adjacent to it (also called neighbours). Neighbours can transform between states as per the following rules:
+
 1. Death by under­population: Any cell with fewer than two live neighbours dies.
+
 2. Death by overpopulation: Any live cell with more than three neighbours dies.
-3. Reproduction:​A​nydeadcellwithexactlythreeneighboursbecomesalive.
+
+3. Reproduction: Any dead cell with exactly three neighbours becomes alive.
+
 4. Transition to the next generation: Any live cell with two or three neighbours moves on to
 the next generation.
+
 These rules are consistently applied over a discretized interval of time where each subsequent time unit produces the subsequent generation. One can define additional rules for the cellular automata to obtain different behavior over generations.
 
 PROBLEM DESCRIPTION
@@ -24,8 +29,11 @@ PLAN OF ACTION
 ==============
 
 We shall be using a performance function in order to determine how we can maximize life. In order to do so, we define the following metrics:
+
 a) maximum number of cells at k units of time
+
 b) maximum cell life in the grid over k intervals of time
+
 We pick the one which is higher, and then the genetic algorithm processes the future generations as per the value computed by the performance function.
 
 DELIVERABLES
